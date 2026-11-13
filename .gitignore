@@ -1,3 +1,27 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment file (contains local paths and API keys)
 .env
+
+# Data & SQLite databases
+data/*.db
+data/*.sqlite
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# Windows launcher workaround
+powershell.bat
+
+# Airflow runtime files / logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
