@@ -128,6 +128,16 @@ Open your browser and navigate to:
 - **Username**: `admin`
 - **Password**: `admin`
 
+### Known Issue
+
+If you get errors like `command not found` right after cloning the project and running a script, it means the files were corrupted by Windows during the download. To fix this:
+
+```bash
+sudo apt install dos2unix -y
+dos2unix setup_wsl_env.sh activate_env.sh .env
+```
+
+Then run `source activate_env.sh` again.
 ---
 
 ## Airflow DAG Workflow Details
